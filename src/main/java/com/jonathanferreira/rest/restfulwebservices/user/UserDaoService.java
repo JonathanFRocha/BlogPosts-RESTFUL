@@ -8,7 +8,7 @@ import java.util.List;
 @Component
 public class UserDaoService {
 
-    private static long userCount = 3;
+    private static long userCount = 4;
     private static List<User> users = new ArrayList<>();
 
 
@@ -26,12 +26,10 @@ public class UserDaoService {
 
     public User save(User user){
         if(user.getId() == null){
-            userCount += 1;
+            ++userCount;
             user.setId(userCount);
-            users.add(user);
-        }{
-            users.add(user);
         }
+        users.add(user);
         return user;
     }
 
