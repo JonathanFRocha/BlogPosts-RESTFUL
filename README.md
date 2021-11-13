@@ -7,3 +7,6 @@ I did this project to learn more about how to create a restful api using JAVA
 - DevTools
 - JPA
 - H2 db
+- Spring Validations
+- Spring HATEOS
+- 
